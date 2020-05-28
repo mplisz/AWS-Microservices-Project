@@ -8,7 +8,7 @@
 dockerpath=emjotpe/clouddevops_project5
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run project4 --image=$dockerpath --port=80
+kubectl run --generator=run-pod/v1 --image=$dockerpath predictions
 
 
 # Step 3:
@@ -17,5 +17,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward deployment/project4 8080:80
+kubectl port-forward pod/predictions  8080:80
 
