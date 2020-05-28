@@ -1,6 +1,6 @@
 <include a CircleCI status badge, here>
 
-[![mplisz](https://circleci.com/gh/mplisz/AWS-Microservices-Project.svg?style=svg)(https://app.circleci.com/pipelines/github/mplisz/AWS-Microservices-Project)
+![mplisz](https://circleci.com/gh/mplisz/AWS-Microservices-Project.svg?style=svg)(https://app.circleci.com/pipelines/github/mplisz/AWS-Microservices-Project)
 
 
 ## Project Overview
