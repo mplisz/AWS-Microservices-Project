@@ -2,44 +2,36 @@
 
 ![mplisz](https://circleci.com/gh/mplisz/AWS-Microservices-Project.svg?style=svg)(https://app.circleci.com/pipelines/github/mplisz/AWS-Microservices-Project)
 
-
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
-
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
-
-### Project Tasks
-
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
-
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
-
----
+This project concludes course 5 (Machine Learning Microservice API) of Cloud DevOps Nanodegree from Udacity. Based on pre-trained model this repo operationalizes a Python flask app (provided by Udacity).
+Scope of the project:
+1) Setting up environment 
+2) Testing code by linting both locally and by means of CircleCi (badge attached)
+3) Improving logging in py.app file
+4) Deplyoment of containerized application by Docker and making prediction (in docker_output.txt)
+5) Configure Kubernetes and creating Kubernetes cluster
+6) Deployment of containerized application by Kubernetes and making prediction (in kubernetes_output.txt)
 
 ## Setup the Environment
 
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
 
-### Running `app.py`
+## Running `app.py`
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps
+## Kubernetes Steps
 
-* Setup and Configure Docker locally
+* Setup and Configure Docker locally (docker login)
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+
+
+
